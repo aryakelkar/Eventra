@@ -1,2 +1,2 @@
-# eventra
+# Eventra
 A live sports &amp; college events tracking app
