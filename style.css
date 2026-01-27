@@ -1,0 +1,37 @@
+  color: rgb(30, 30, 30);
+  opacity: 0;
+  transform: scale(0.1);
+}
+
+/* Merge from background */
+.merge {
+  animation: mergeIn 1.2s ease forwards;
+}
+
+@keyframes mergeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Maximize animation */
+.maximize {
+  animation: scaleUp 1s ease forwards;
+}
+
+@keyframes scaleUp {
+  to {
+    transform: scale(2.2);
+  }
+}
+
+/* Second page */
+#main {
+  display: none;
+  height: 100vh;
+  background: rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
