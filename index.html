@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGrowth - Organic Products for Sustainable Living</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🌱 EcoGrowth</h1>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">🛒 Cart <span class="cart-count" id="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <h2>Grow Green, Grow Organic</h2>
+            <p>Premium organic products for sustainable farming and gardening</p>
+            <a href="shop.html" class="btn btn-secondary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1592419044706-39796d40f98c?w=500" alt="Vermicompost">
+                    <div class="product-info">
+                        <h3>Premium Vermicompost</h3>
+                        <p>Nutrient-rich organic compost made from earthworm castings</p>
+                        <div class="product-price">₹299 / kg</div>
+                        <button class="btn" onclick="addToCart('Premium Vermicompost', 299, 'https://images.unsplash.com/photo-1592419044706-39796d40f98c?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=500" alt="Vermiwash">
+                    <div class="product-info">
+                        <h3>Organic Vermiwash</h3>
+                        <p>Liquid fertilizer extracted from vermicompost beds</p>
+                        <div class="product-price">₹199 / liter</div>
+                        <button class="btn" onclick="addToCart('Organic Vermiwash', 199, 'https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1617791160588-241658c0f566?w=500" alt="Activated Charcoal">
+                    <div class="product-info">
+                        <h3>Activated Charcoal</h3>
+                        <p>Natural soil conditioner and water purifier</p>
+                        <div class="product-price">₹399 / kg</div>
+                        <button class="btn" onclick="addToCart('Activated Charcoal', 399, 'https://images.unsplash.com/photo-1617791160588-241658c0f566?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EcoGrowth. All rights reserved.</p>
+            <p>Committed to sustainable and organic farming practices</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

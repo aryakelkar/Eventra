@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - EcoGrowth</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🌱 EcoGrowth</h1>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">🛒 Cart <span class="cart-count" id="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Shop Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <a href="product-detail.html?product=vermicompost">
+                        <img src="https://images.unsplash.com/photo-1592419044706-39796d40f98c?w=500" alt="Vermicompost">
+                    </a>
+                    <div class="product-info">
+                        <h3>Premium Vermicompost</h3>
+                        <p>Nutrient-rich organic compost made from earthworm castings</p>
+                        <div class="product-price">₹299 / kg</div>
+                        <button class="btn" onclick="addToCart('Premium Vermicompost', 299, 'https://images.unsplash.com/photo-1592419044706-39796d40f98c?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <a href="product-detail.html?product=vermiwash">
+                        <img src="https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=500" alt="Vermiwash">
+                    </a>
+                    <div class="product-info">
+                        <h3>Organic Vermiwash</h3>
+                        <p>Liquid fertilizer extracted from vermicompost beds</p>
+                        <div class="product-price">₹199 / liter</div>
+                        <button class="btn" onclick="addToCart('Organic Vermiwash', 199, 'https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <a href="product-detail.html?product=charcoal">
+                        <img src="https://images.unsplash.com/photo-1617791160588-241658c0f566?w=500" alt="Activated Charcoal">
+                    </a>
+                    <div class="product-info">
+                        <h3>Activated Charcoal</h3>
+                        <p>Natural soil conditioner and water purifier</p>
+                        <div class="product-price">₹399 / kg</div>
+                        <button class="btn" onclick="addToCart('Activated Charcoal', 399, 'https://images.unsplash.com/photo-1617791160588-241658c0f566?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=500" alt="Organic Fertilizer">
+                    <div class="product-info">
+                        <h3>Organic Fertilizer Mix</h3>
+                        <p>Balanced blend of natural nutrients for all plants</p>
+                        <div class="product-price">₹249 / kg</div>
+                        <button class="btn" onclick="addToCart('Organic Fertilizer Mix', 249, 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500" alt="Composting Worms">
+                    <div class="product-info">
+                        <h3>Red Wiggler Worms</h3>
+                        <p>Live composting worms for your vermicompost setup</p>
+                        <div class="product-price">₹499 / 100g</div>
+                        <button class="btn" onclick="addToCart('Red Wiggler Worms', 499, 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500" alt="Neem Oil">
+                    <div class="product-info">
+                        <h3>Pure Neem Oil</h3>
+                        <p>Natural pest repellent and plant protector</p>
+                        <div class="product-price">₹349 / liter</div>
+                        <button class="btn" onclick="addToCart('Pure Neem Oil', 349, 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=500" alt="Potting Mix">
+                    <div class="product-info">
+                        <h3>Premium Potting Mix</h3>
+                        <p>Ready-to-use organic soil blend for containers</p>
+                        <div class="product-price">₹179 / kg</div>
+                        <button class="btn" onclick="addToCart('Premium Potting Mix', 179, 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=500" alt="Bio-Enzyme">
+                    <div class="product-info">
+                        <h3>Organic Bio-Enzyme</h3>
+                        <p>Multi-purpose cleaning and composting enzyme</p>
+                        <div class="product-price">₹279 / liter</div>
+                        <button class="btn" onclick="addToCart('Organic Bio-Enzyme', 279, 'https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1587049352846-4a222e784acc?w=500" alt="Coco Peat">
+                    <div class="product-info">
+                        <h3>Organic Coco Peat</h3>
+                        <p>Natural growing medium with excellent water retention</p>
+                        <div class="product-price">₹149 / kg</div>
+                        <button class="btn" onclick="addToCart('Organic Coco Peat', 149, 'https://images.unsplash.com/photo-1587049352846-4a222e784acc?w=500')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EcoGrowth. All rights reserved.</p>
+            <p>Committed to sustainable and organic farming practices</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
